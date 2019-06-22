@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lekangdu/Desktop/Assignment_2/Command.cpp
+Command.h
+/Users/lekangdu/Desktop/Assignment_2/Command.h
+
+/Users/lekangdu/Desktop/Assignment_2/Command.h
+
+/Users/lekangdu/Desktop/Assignment_2/LineEd.cpp
+LineEd.h
+/Users/lekangdu/Desktop/Assignment_2/LineEd.h
+
+/Users/lekangdu/Desktop/Assignment_2/LineEd.h
+
+/Users/lekangdu/Desktop/Assignment_2/LineEdDriver.cpp
+iostream
+-
+string
+-
+cstdlib
+-
+LineEd.h
+/Users/lekangdu/Desktop/Assignment_2/LineEd.h
+

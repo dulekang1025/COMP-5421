@@ -1,0 +1,3 @@
+/Users/lekangdu/Desktop/Assignment_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lekangdu/Desktop/Assignment_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lekangdu/Desktop/Assignment_2/cmake-build-debug/CMakeFiles/Assignment_2.dir
