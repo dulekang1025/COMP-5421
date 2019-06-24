@@ -13,8 +13,13 @@
 using namespace std;
 class LineEd {
 private:
+    string file_name;
+    list<string> buffer;
+    vector<string> clipboard;
+    bool state;
 public:
     LineEd(string fileName);
+    void run();
 };
 
 

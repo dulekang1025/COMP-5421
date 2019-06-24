@@ -9,5 +9,13 @@
 
 using namespace std;
 
-LineEd::LineEd(string fileName) {}
+LineEd::LineEd(string fileName) {
+    cout<<"Entering command mode."<<endl;
+}
+
+void LineEd::run() {
+    string command;
+    getline(cin,command);
+    Command com = Command(command);
+}
 

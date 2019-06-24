@@ -7,28 +7,32 @@ using  std::cout;
 using std::cerr;
 using std::endl;
 #include "LineEd.h"
+using namespace std;
 
 // function prototypes
 void testLineEd(const string & filename);
 
 int main(int argc, char * argv[])
 {
-   if (argc > 2)  // too many arguments
-   {
-      cerr << "Usage 1: " << argv[0] << "\n";
-      cerr << "Usage 2: " << argv[0] << " filename\n";
-      exit(EXIT_FAILURE);
-   }
+   cout<<"Input filename: "<<endl;
+//   if (argc > 2)  // too many arguments
+//   {
+//      cerr << "Usage 1: " << argv[0] << "\n";
+//      cerr << "Usage 2: " << argv[0] << " filename\n";
+//      exit(EXIT_FAILURE);
+//   }
 
    string filename{}; // empty file name, in case argc==1
-   if (argc == 2) // only one argument, a file name expected
-   {
-      filename = argv[1];
-   };
+//   if (argc == 2) // only one argument, a file name expected
+//   {
+//      filename = argv[1];
+//   };
 
+   getline(cin,filename);
    // Normally, we'd run the editor by uncommenting the following two lines
    LineEd ed(filename); // create a LineED object
-//   ed.run();             // run the line editor
+   ed.run();             // run the line editor
+
 
    // test our line editor
    //testLineEd(filename); // normally we'd comment out this line
