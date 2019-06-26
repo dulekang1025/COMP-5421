@@ -15,11 +15,14 @@ class LineEd {
 private:
     string file_name;
     list<string> buffer;
+    int curline;
     vector<string> clipboard;
     bool state;
+    void carryOut(Command &com);
 public:
-    LineEd(string fileName);
+    LineEd(const string fileName);
     void run();
+    void Appends();
 };
 
 

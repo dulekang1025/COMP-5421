@@ -9,13 +9,53 @@
 
 using namespace std;
 
-LineEd::LineEd(string fileName) {
-    cout<<"Entering command mode."<<endl;
+LineEd::LineEd(const string fileName) {
+    LineEd::file_name = fileName;
+    if(file_name == ""){
+        curline = 0;
+        state = false;
+        buffer.clear();
+        clipboard.clear();
+        cout << "\"?\"" << " " << "[New File]" << endl;
+        cout << "Entering command mode." << endl;
+    } else{
+
+    }
 }
 
 void LineEd::run() {
-    string command;
-    getline(cin,command);
-    Command com = Command(command);
+    string commandLine;
+    cout<<"? ";
+    getline(cin,commandLine);
+    Command com;
+    com.parse(commandLine,10,20);  //commandLine,curline,buffer.size()
+    while(com.getSymbol() != "q"){
+        carryOut(com);
+        cout<<"? ";
+        getline(cin,commandLine);
+        com.parse(commandLine,curline,buffer.size());
+    }
 }
 
+void LineEd::carryOut(Command &com) {
+    if(com.getSymbol() == "a"){
+        Appends();
+        return;
+    }
+
+}
+
+void LineEd::Appends() {
+    int count{0};
+    int size = buffer.size();
+    string temp;
+    cin.clear();
+    getline(cin,temp);
+    while(temp != "Q" && temp != "q"){
+        buffer.push_back(temp);
+        count++;
+        cin.clear();
+        getline(cin,temp);
+    }
+    curline = size + count;
+}
