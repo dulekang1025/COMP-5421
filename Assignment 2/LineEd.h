@@ -22,7 +22,7 @@ private:
     void Appends();
     void Prints(string address1,string address2);
     void Inserts(int line);
-    void Pastes(int line);
+    void Pastes(string address);
     void Deletes(string address1,string address2);
     void Up();
     void Down();
@@ -30,6 +30,10 @@ private:
     void Writes(string fileName);
     void Quit();
     void Appends(string line);
+    void Cuts(string address1,string address2);
+    void Joins(string address1,string address2);
+    void Inserts(int line,string address);
+    void Changes(string address1,string address2);
 public:
     LineEd(const string fileName);
     void run();

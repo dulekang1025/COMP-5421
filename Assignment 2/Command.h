@@ -16,7 +16,7 @@ private:
     string address1;
     string address2;
     string symbolSet = "aivdxjpcungwq";
-    string badcommandSet = "befhklmorstyz~`()-_+=*&^%#@!?/:;[]{}|'><";
+    string badcommandSet = "befhklmorstyz~`()_+=*&^%#@!?/:;[]{}|'><";
 public:
     Command(const string &commandline, int curLine, int bufferSize);
     Command();

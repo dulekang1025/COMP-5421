@@ -28,12 +28,12 @@ int main(int argc, char * argv[])
    };
 
    // Normally, we'd run the editor by uncommenting the following two lines
-   LineEd ed(filename); // create a LineED object
-   ed.run();             // run the line editor
+//   LineEd ed(filename); // create a LineED object
+//   ed.run();             // run the line editor
 
 
    // test our line editor
-   //testLineEd(filename); // normally we'd comment out this line
+   testLineEd("abc.txt"); // normally we'd comment out this line
 
    return 0;
 }
@@ -59,6 +59,7 @@ ed.runCommand("x$, 1");
 ed.runCommand("p");// not allowed on empty buffer
 
 ed.runCommand("v");     // paste ino empty buffer
+
 ed.runCommand("1,$");   // print all
 
 ed.runCommand("i2");    // insert at line 2
@@ -97,7 +98,7 @@ ed.runCommand("1,$");   // print all
 ed.runCommand("j1,$");  // join all lines
 ed.runCommand("1,$");   // print all
 ed.runCommand("w"); // save buffer
-////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 
 ed.runCommand("a"); // append
 ed.runCommand("$,1"); // print all
