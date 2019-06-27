@@ -16,6 +16,7 @@ private:
     string address1;
     string address2;
     string symbolSet = "aivdxjpcungwq";
+    string badcommandSet = "befhklmorstyz~`()-_+=*&^%#@!?/:;[]{}|'><";
 public:
     Command(const string &commandline, int curLine, int bufferSize);
     Command();
@@ -32,6 +33,7 @@ public:
     void remove_space(const string& command_line);
     void getSymbol(int curline, int bufferSize);
     void findAddress(string commRemovedSym,int curline, int bufferSize);
+    bool validateAddress(string address);
 };
 
 

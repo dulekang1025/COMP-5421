@@ -19,10 +19,21 @@ private:
     vector<string> clipboard;
     bool state;
     void carryOut(Command &com);
+    void Appends();
+    void Prints(string address1,string address2);
+    void Inserts(int line);
+    void Pastes(int line);
+    void Deletes(string address1,string address2);
+    void Up();
+    void Down();
+    void Goes(string address1);
+    void Writes(string fileName);
+    void Quit();
+    void Appends(string line);
 public:
     LineEd(const string fileName);
     void run();
-    void Appends();
+    void runCommand(string command);
 };
 
 

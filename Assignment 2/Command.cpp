@@ -20,7 +20,7 @@ Command::Command() {
 
 void Command::parse(const string &cur_line, int curLine, int bufferSize) {
     Command::remove_space(cur_line);
-    cout<<command_line<<endl;
+    //cout<<command_line<<endl;
     Command::getSymbol(curLine, bufferSize);   //getInfo int curline, int bufferSize
     cout<<"In parse: "<<symbol<<endl;
     cout<<"In parse: "<<address1<<" "<<address2<<endl;
@@ -91,18 +91,32 @@ void Command::getSymbol(int curline, int bufferSize) {
     // start from here
     string temp;
     temp.push_back(tolower((char)command_line.at(0)));  // ignore upper and lower case
+    // bad command
+    if(badcommandSet.find(temp) != string::npos){
+        cout<<"bad command: "<<temp<<endl;
+        setSymbol("");    // no symbol, default to p
+        return;
+    }
     if(symbolSet.find(temp) == string::npos){
         setSymbol("p");    // no symbol, default to p
         findAddress(command_line,curline,bufferSize);
     } else{
         setSymbol(temp);   // set symbol
         string tempRemovedSym = command_line.substr(1);  // remove symbol
-        cout<<"Removed symbol: "<<tempRemovedSym<<endl;
+        cout<<"After remove symbol: "<<tempRemovedSym<<endl;
         findAddress(tempRemovedSym,curline,bufferSize);
     }
 }
 
 void Command::findAddress(string commRemovedSym,int curline, int bufferSize){
+
+    if(bufferSize == 0){
+        if(getSymbol() != "i" && getSymbol() != "a" && getSymbol() != "q" && getSymbol() != "v"){
+            cout<<"File empty. Must use one of I,A,Q commands."<<endl;
+            return;
+        }
+    }
+
     size_t pos = commRemovedSym.find(',');
     int length = (int)commRemovedSym.length();
     string tempAddress1;
@@ -134,6 +148,7 @@ void Command::findAddress(string commRemovedSym,int curline, int bufferSize){
     } else{                                      // no ','
         if(length == 0){       // null => p ., .
             cout<<"Mode: ' null '"<<endl;
+            return;
 //            tempAddress1 = to_string(curline);
 //            tempAddress2 = to_string(curline);
         } else{                // -100 => p -100, -100
@@ -141,6 +156,21 @@ void Command::findAddress(string commRemovedSym,int curline, int bufferSize){
             tempAddress1 = commRemovedSym;
             tempAddress2 = tempAddress1;
         }
+    }
+
+    // validate address
+    if(!validateAddress(tempAddress1) || !validateAddress(tempAddress2)){
+        if(!validateAddress(tempAddress1)){
+            cout<<"Bad address 1: "<<tempAddress1<<endl;
+            setAddress1("BAD");
+            return;
+        }
+        if(!validateAddress(tempAddress2)){
+            cout<<"Bad address 2: "<<tempAddress2<<endl;
+            setAddress2("BAD");
+            return;
+        }
+        return;
     }
 
     // .
@@ -154,10 +184,13 @@ void Command::findAddress(string commRemovedSym,int curline, int bufferSize){
     // ?
     if(tempAddress1 == "$"){
         tempAddress1 = to_string(bufferSize);
+        cout<<tempAddress1<<endl;
     }
     if(tempAddress2 == "$"){
         tempAddress2 = to_string(bufferSize);
+        cout<<tempAddress2<<endl;
     }
+    cout<<"Here luck."<<endl;
 
     // rules
     int tempA1 = stoi(tempAddress1);
@@ -175,12 +208,12 @@ void Command::findAddress(string commRemovedSym,int curline, int bufferSize){
     //7. If a line address exceeds the buﬀer size,
     // then LineED defaults to the last line in the buﬀer.
     if(tempA1 > bufferSize){
-        tempAddress1 = to_string(bufferSize - 1);
-        tempA1 = bufferSize - 1;
+        tempAddress1 = to_string(bufferSize);
+        tempA1 = bufferSize;
     }
     if(tempA2 > bufferSize){
-        tempAddress2 = to_string(bufferSize - 1);
-        tempA2 = bufferSize - 1;
+        tempAddress2 = to_string(bufferSize);
+        tempA2 = bufferSize;
     }
     //8. Regardless of how a line range is determined,
     // the ﬁrst line address cannot exceed the second line address;
@@ -201,4 +234,39 @@ void Command::findAddress(string commRemovedSym,int curline, int bufferSize){
     // setAddress
     setAddress1(tempAddress1);
     setAddress2(tempAddress2);
+}
+
+
+bool Command::validateAddress(string address) {
+    string characterSet = "qwertyuiopasdfghjklzxcvbnm";
+    string numberSet = "0123456789";
+    string symbolSet = ".$";
+
+    // only symbol in the address and length must be 1
+    if(address.find("$") != string::npos || address.find(".") != string::npos){
+        cout<<"symbol check"<<endl;
+        if(address.length() != 1) return false;
+        if(characterSet.find(address) != string::npos || numberSet.find(address) != string::npos){
+            return false;
+        } else{
+            return true;
+        }
+    }
+    // only number
+    if(numberSet.find(address) != string::npos){
+        cout<<"number check"<<endl;
+        if(address.find(symbolSet)!= string::npos || address.find(characterSet)!= string::npos){
+            return false;
+        } else{
+            return true;
+        }
+    }
+    // if there is characters in the address
+    if(address.find(characterSet)!= string::npos){
+        return false;
+    } else{
+        return true;
+    }
+    cout<<"Cannot reach here."<<endl;
+
 }

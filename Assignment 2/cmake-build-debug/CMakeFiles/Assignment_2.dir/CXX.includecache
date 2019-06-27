@@ -9,16 +9,12 @@
 /Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.cpp
 Command.h
 /Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.h
-LineEd.h
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.h
 iostream
 -
 string
 -
 
 /Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.h
-LineEd.h
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.h
 iostream
 -
 string
@@ -33,6 +29,8 @@ iostream
 -
 string
 -
+fstream
+-
 
 /Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.h
 iostream
@@ -45,14 +43,4 @@ vector
 -
 Command.h
 /Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.h
-
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEdDriver.cpp
-iostream
--
-string
--
-cstdlib
--
-LineEd.h
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.h
 
