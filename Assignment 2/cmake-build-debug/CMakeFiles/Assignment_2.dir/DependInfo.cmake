@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.cpp" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/Command.cpp.o"
-  "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.cpp" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/LineEd.cpp.o"
-  "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEdDriver.cpp" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o"
+  "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/Command.cpp" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/Command.cpp.o"
+  "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEd.cpp" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/LineEd.cpp.o"
+  "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEdDriver.cpp" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

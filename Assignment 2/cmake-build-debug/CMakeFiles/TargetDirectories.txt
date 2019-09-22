@@ -1,3 +1,3 @@
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir
+/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir

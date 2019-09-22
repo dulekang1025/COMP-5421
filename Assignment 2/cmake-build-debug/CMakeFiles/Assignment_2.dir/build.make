@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2"
+CMAKE_SOURCE_DIR = "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Assignment_2.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/Assignment_2.dir/flags.make
 
 CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o: CMakeFiles/Assignment_2.dir/flags.make
 CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o: ../LineEdDriver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o -c "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEdDriver.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.o -c "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEdDriver.cpp"
 
 CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEdDriver.cpp" > CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEdDriver.cpp" > CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.i
 
 CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEdDriver.cpp" -o CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEdDriver.cpp" -o CMakeFiles/Assignment_2.dir/LineEdDriver.cpp.s
 
 CMakeFiles/Assignment_2.dir/Command.cpp.o: CMakeFiles/Assignment_2.dir/flags.make
 CMakeFiles/Assignment_2.dir/Command.cpp.o: ../Command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assignment_2.dir/Command.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment_2.dir/Command.cpp.o -c "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assignment_2.dir/Command.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment_2.dir/Command.cpp.o -c "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/Command.cpp"
 
 CMakeFiles/Assignment_2.dir/Command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment_2.dir/Command.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.cpp" > CMakeFiles/Assignment_2.dir/Command.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/Command.cpp" > CMakeFiles/Assignment_2.dir/Command.cpp.i
 
 CMakeFiles/Assignment_2.dir/Command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment_2.dir/Command.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/Command.cpp" -o CMakeFiles/Assignment_2.dir/Command.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/Command.cpp" -o CMakeFiles/Assignment_2.dir/Command.cpp.s
 
 CMakeFiles/Assignment_2.dir/LineEd.cpp.o: CMakeFiles/Assignment_2.dir/flags.make
 CMakeFiles/Assignment_2.dir/LineEd.cpp.o: ../LineEd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assignment_2.dir/LineEd.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment_2.dir/LineEd.cpp.o -c "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assignment_2.dir/LineEd.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment_2.dir/LineEd.cpp.o -c "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEd.cpp"
 
 CMakeFiles/Assignment_2.dir/LineEd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment_2.dir/LineEd.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.cpp" > CMakeFiles/Assignment_2.dir/LineEd.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEd.cpp" > CMakeFiles/Assignment_2.dir/LineEd.cpp.i
 
 CMakeFiles/Assignment_2.dir/LineEd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment_2.dir/LineEd.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/LineEd.cpp" -o CMakeFiles/Assignment_2.dir/LineEd.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/LineEd.cpp" -o CMakeFiles/Assignment_2.dir/LineEd.cpp.s
 
 # Object files for target Assignment_2
 Assignment_2_OBJECTS = \
@@ -110,7 +110,7 @@ Assignment_2: CMakeFiles/Assignment_2.dir/Command.cpp.o
 Assignment_2: CMakeFiles/Assignment_2.dir/LineEd.cpp.o
 Assignment_2: CMakeFiles/Assignment_2.dir/build.make
 Assignment_2: CMakeFiles/Assignment_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Assignment_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Assignment_2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment_2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/Assignment_2.dir/clean:
 .PHONY : CMakeFiles/Assignment_2.dir/clean
 
 CMakeFiles/Assignment_2.dir/depend:
-	cd "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug" "/Users/lekangdu/CLionProjects/COMP-5421/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug" "/Applications/CLion.app/Contents/bin/https:/github.com/dulekang1993/COMP-5421.git/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Assignment_2.dir/depend
 
